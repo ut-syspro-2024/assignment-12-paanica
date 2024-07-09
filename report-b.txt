@@ -1,0 +1,24 @@
+受け取った文字列をprintk関数で出力するシステムコールを実装した。基本的には、講義資料に記載されている流れで実装していったが、自作したシステムコールは文字列と文字列の大きさを受け取る引数２の関数になるので、定義の際にはSYSCALL_DEFINE2を用いた。また、printk関数のログレベルはKERN_WARNINGに設定した。
+
+実装した自作システムコールを使用してみた結果は以下のようになった。ここでは、文字列hello worldをシステムコールに渡し、それをprintk関数で出力している。printk関数で出力した文字列に関して、hello worldの後に文字化けが続いていたのだが、原因はよく分からなかった。
+
+Welcome to Buildroot
+buildroot login: root
+# myapp
+done!
+# myapp
+[    9.914670] hello world�ݞ��
+done!
+# myapp
+[   12.166609] hello world�ݞ��
+done!
+# myapp
+[   15.947246] hello world�ݞ��
+done!
+# myapp
+[   20.345703] hello world�ݞ��
+done!
+# [   28.582547] hello world�ݞ��
+[   33.539954] random: crng init done
+
+
