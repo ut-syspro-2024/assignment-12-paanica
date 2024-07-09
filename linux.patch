@@ -1,0 +1,34 @@
+diff --git a/buildroot b/buildroot
+new file mode 160000
+index 0000000..3ebc7c6
+--- /dev/null
++++ b/buildroot
+@@ -0,0 +1 @@
++Subproject commit 3ebc7c69d56430c34eba4c869d1d4fe4d1e8de55
+diff --git a/buildroot.patch b/buildroot.patch
+new file mode 100644
+index 0000000..196e463
+--- /dev/null
++++ b/buildroot.patch
+@@ -0,0 +1,14 @@
++diff --git a/buildroot b/buildroot
++new file mode 160000
++index 0000000..3ebc7c6
++--- /dev/null
+++++ b/buildroot
++@@ -0,0 +1 @@
+++Subproject commit 3ebc7c69d56430c34eba4c869d1d4fe4d1e8de55
++diff --git a/linux b/linux
++new file mode 160000
++index 0000000..661e504
++--- /dev/null
+++++ b/linux
++@@ -0,0 +1 @@
+++Subproject commit 661e504db04c6b7278737ee3a9116738536b4ed4
+diff --git a/linux b/linux
+new file mode 160000
+index 0000000..661e504
+--- /dev/null
++++ b/linux
+@@ -0,0 +1 @@
++Subproject commit 661e504db04c6b7278737ee3a9116738536b4ed4
